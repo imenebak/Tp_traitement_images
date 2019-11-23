@@ -20,6 +20,7 @@ from sklearn import cluster
 
 K = 3
 D = 3
+Im = "4.jpg"
 THRESH = 1E-4
 useType = np.float
 
@@ -40,7 +41,7 @@ def findCentroids(feats, centroids):
 
 if __name__ == '__main__':
     
-    img = cv2.imread("1.jpg")
+    img = cv2.imread(Im)
 
     size = (img.shape[0] * img.shape[1], img.shape[2])
     #print(img.shape[0] , img.shape[1], img.shape[2])
@@ -88,7 +89,7 @@ if __name__ == '__main__':
     ################################################################################################################################################
     ##################################################################### UTILISANT LA FONCTION PREDEFINIE #########################################
 
-    imgg = cv2.imread("1.jpg")
+    imgg = cv2.imread(Im)
     #cv2.imshow("original image",img)
 
     imgg1 = np.reshape(imgg, (imgg.shape[0]*img.shape[1], 3))
@@ -115,14 +116,3 @@ if __name__ == '__main__':
     # De-allocate any associated memory usage  
     if cv2.waitKey(0) & 0xff == 27: 
         cv2.destroyAllWindows() 
-
-
-
-
-
-
-
-
-
-
-
