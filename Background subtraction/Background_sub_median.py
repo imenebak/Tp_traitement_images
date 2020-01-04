@@ -76,18 +76,18 @@ for gg in range(0, len(data)-3,3):
             print(i)
             m = int(gg)+int(i)
             if(i == 0):
-                print(data[m])
+                #print(data[m])
                 firstFrame = cv2.imread(data[m], 0)
                 secondFrame = firstFrame
                 thirdFrame = secondFrame
             if(i == 1):
-                print(data[m])
+                #print(data[m])
                 secondFrame = cv2.imread(data[m+1],0)
             if(i == 2):
-                print(data[m])
+                #print(data[m])
                 thirdFrame = cv2.imread(data[m+2],0)
             else:
-                print(data[m+1])
+                #print(data[m+1])
                 initSubtraction(firstFrame, secondFrame, thirdFrame, data[m+3])
 
 
