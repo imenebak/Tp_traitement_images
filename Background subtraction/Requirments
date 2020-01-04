@@ -2,3 +2,19 @@ Requirement
 python >= 3.5
 opencv 
 numpy
+
+
+About the methode:
+Médiane
+Dans ce cas, le modèle de l’ arrièr e plan est la médiane d'un tampon (buffer) de N trames. A chaque
+nouvelle observation d'une trame, la médiane est recalculée a partir des N trames précédant la trame
+courante.
+La trame est ensuite comparée au modèle de médian
+e afin de déterminer le masque d'avant plan.
+NB
+-
+le masque de soustraction de fond sera une image binaire ou l'objet en mouvement
+sera en blanc (pixel 1) et le fond en noir (pixel 0).
+-
+Le masque d'avant plan est mis a 1 si le pixel c ourant dépasse celui du modèle d’arrière plan avec un
+certain seuil T.
