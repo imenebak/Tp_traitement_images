@@ -6,7 +6,7 @@ numpy
 
 About the methode:
 Médiane
-Dans ce cas, le modèle de l’ arrièr e plan est la médiane d'un tampon (buffer) de N trames. A chaque
+Dans ce cas, le modèle de l’ arrièr e plan est la médiane d'un tampon (buffer) de N = 3 trames dans notre cas. A chaque
 nouvelle observation d'une trame, la médiane est recalculée a partir des N trames précédant la trame
 courante.
 La trame est ensuite comparée au modèle de médian
